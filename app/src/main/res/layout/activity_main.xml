@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Texview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:paddingEnd="30dp"
+        android:hint="0"
+        android:textColorHint="@color/white"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="80dp" />
+
+    <Button
+        android:id="@+id/btnAC"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/buttonradius2"
+
+        android:onClick="btnAc"
+
+        android:text="AC"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnNeg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/btnAC"
+        android:background="@drawable/buttonradius2"
+        android:text="+/-"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnPercentage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/btnNeg"
+        android:background="@drawable/buttonradius2"
+        android:text="%"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/btnPercentage"
+        android:background="@drawable/buttonradius3"
+        android:text="÷"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/Btn7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnAC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonradius"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnAC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/Btn7"
+        android:background="@drawable/buttonradius"
+        android:text="8"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnAC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn8"
+        android:background="@drawable/buttonradius"
+        android:text="9"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnAC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn9"
+        android:background="@drawable/buttonradius3"
+        android:text="×"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Btn7"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonradius"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn4"
+        android:background="@drawable/buttonradius"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn9"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn5"
+        android:background="@drawable/buttonradius"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnMul"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn6"
+        android:background="@drawable/buttonradius3"
+        android:text="-"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonradius"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn1"
+        android:background="@drawable/buttonradius"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn2"
+        android:background="@drawable/buttonradius"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnSub"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn3"
+        android:background="@drawable/buttonradius3"
+        android:text="+"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundbutton"
+        android:paddingLeft="25dp"
+        android:text="0"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnDot"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn0"
+        android:background="@drawable/buttonradius"
+        android:text="."
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnPlus"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn3"
+        android:background="@drawable/buttonradius3"
+        android:text="="
+        android:textSize="50dp" />
+
+</RelativeLayout>
